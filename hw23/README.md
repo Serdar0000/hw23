@@ -1,17 +1,46 @@
-# hw23
+# HW23 Habit Tracker
 
-A new Flutter project.
+Flutter-приложение для трекинга привычек с локальным хранением данных.
 
-## Getting Started
+## Возможности
 
-This project is a starting point for a Flutter application.
+- просмотр списка привычек
+- добавление новой привычки
+- отметка выполнения привычки за текущий день
+- просмотр истории выполнения по датам
+- удаление привычки
 
-A few resources to get you started if this is your first Flutter project:
+## Технологии
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter (Material 3)
+- Riverpod (`hooks_riverpod`) для состояния
+- GoRouter для навигации
+- Hive для локального хранилища
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Запуск проекта
+
+1. Установить зависимости:
+
+```bash
+flutter pub get
+```
+
+2. Запустить приложение:
+
+```bash
+flutter run
+```
+
+## Проверки качества
+
+```bash
+flutter analyze
+flutter test
+```
+
+## Структура
+
+- `lib/domain` — сущности и контракты репозиториев
+- `lib/data` — модели, data source и реализация репозитория
+- `lib/presentation` — экраны и провайдеры
+- `test` — widget-тесты
